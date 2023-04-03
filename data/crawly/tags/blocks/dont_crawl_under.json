@@ -134,6 +134,12 @@
         "minecraft:dragon_egg",
         "minecraft:chest",
         "minecraft:trapped_chest",
-        "minecraft:ender_chest"
+        "minecraft:ender_chest",
+        "minecraft:lava",
+        "minecraft:hopper",
+        "minecraft:brewing_stand",
+        "minecraft:conduit",
+        "minecraft:lantern",
+        "minecraft:soul_lantern"
     ]
 }
