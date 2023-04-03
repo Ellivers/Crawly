@@ -26,9 +26,6 @@
         "minecraft:cobweb",
         "minecraft:sea_pickle",
         "minecraft:seagrass",
-        "minecraft:repeater",
-        "minecraft:comparator",
-        "minecraft:ladder",
         "minecraft:tripwire_hook",
         "minecraft:brown_mushroom",
         "minecraft:red_mushroom",
@@ -60,7 +57,6 @@
         "minecraft:void_air",
         "minecraft:sugar_cane",
         "minecraft:water",
-        "minecraft:lily_pad",
         "minecraft:kelp",
         "minecraft:kelp_plant",
         "minecraft:bamboo",
@@ -108,6 +104,16 @@
         {
             "id": "minecraft:sculk_vein",
             "required": false
-        }
+        },
+        "minecraft:crimson_roots",
+        "minecraft:warped_roots",
+        "minecraft:crimson_fungus",
+        "minecraft:warped_fungus",
+        "minecraft:nether_sprouts",
+        "minecraft:tall_grass",
+        "minecraft:tall_seagrass",
+        "minecraft:large_fern",
+        "minecraft:attached_melon_stem",
+        "minecraft:attached_pumpkin_stem"
     ]
 }

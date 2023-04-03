@@ -131,6 +131,11 @@
             "id": "minecraft:cherry_sapling",
             "required": false
         },
+        "minecraft:attached_melon_stem",
+        "minecraft:attached_pumpkin_stem",
+        "minecraft:tall_grass",
+        "minecraft:large_fern",
+        "minecraft:tall_seagrass",
 
 
 
@@ -210,7 +215,8 @@
         "minecraft:red_stained_glass_pane",
         "minecraft:black_stained_glass_pane",
         "minecraft:hopper",
-        "minecraft:cactus"
+        "minecraft:cactus",
+        "minecraft:turtle_egg"
 
     ]
 }
