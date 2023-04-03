@@ -1,0 +1,5 @@
+- Reworked mechanics
+- Added the ability to crawl into spaces with blocks that cannot be crawled through completely
+- Removed the ability to crawl under lava
+- Added support for new blocks from 1.16+
+- Fixed some bugs
