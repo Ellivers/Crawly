@@ -14,4 +14,4 @@ tag @p[tag=crawly.temp] remove crawly.temp
 
 scoreboard players operation @s crawly = #direction crawly
 
-execute if entity @s[type=minecraft:area_effect_cloud] run schedule function crawly:spawn/update 2t
+execute if entity @s[type=minecraft:area_effect_cloud] run schedule function crawly:spawn/update_schedule 2t

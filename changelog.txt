@@ -1,3 +1,4 @@
+- Now works with Minecraft 1.17+
 - Reworked mechanics
 - Added the ability to crawl into spaces with blocks that cannot be crawled through completely
 - Removed the ability to crawl under lava
