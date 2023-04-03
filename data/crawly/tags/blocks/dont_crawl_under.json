@@ -104,6 +104,10 @@
         "minecraft:spore_blossom",
         "minecraft:sweet_berry_bush",
         "minecraft:light",
-        "minecraft:powder_snow"
+        "minecraft:powder_snow",
+        {
+            "id": "minecraft:sculk_vein",
+            "required": false
+        }
     ]
 }

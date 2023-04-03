@@ -3,7 +3,14 @@
         "minecraft:air",
         "#minecraft:banners",
         "#minecraft:buttons",
-        "#minecraft:wool_carpets",
+        {
+            "id": "#minecraft:wool_carpets",
+            "required": false
+        },
+        {
+            "id": "#minecraft:carpets",
+            "required": false
+        },
         "#minecraft:corals",
         "#minecraft:crops",
         "#minecraft:small_flowers",
@@ -99,7 +106,10 @@
         "minecraft:nether_sprouts",
         "minecraft:moss_carpet",
         "minecraft:soul_torch",
-        "minecraft:sculk_vein",
+        {
+            "id": "minecraft:sculk_vein",
+            "required": false
+        },
         "minecraft:lava",
         "minecraft:nether_portal",
         "minecraft:end_portal",
@@ -150,7 +160,10 @@
         "minecraft:conduit",
         "minecraft:brewing_stand",
         "minecraft:lightning_rod",
-        "minecraft:decorated_pot",
+        {
+            "id": "minecraft:decorated_pot",
+            "required": false
+        },
         "minecraft:dragon_head",
         "minecraft:dragon_wall_head",
         "minecraft:player_head",
