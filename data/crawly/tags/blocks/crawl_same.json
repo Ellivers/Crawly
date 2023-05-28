@@ -1,0 +1,26 @@
+{
+    "values": [
+        {
+            "id": "#minecraft:wool_carpets",
+            "required": false
+        },
+        {
+            "id": "#minecraft:carpets",
+            "required": false
+        },
+        "#minecraft:trapdoors",
+        "#minecraft:candles",
+        "minecraft:sea_pickle",
+        "minecraft:repeater",
+        "minecraft:comparator",
+        "minecraft:daylight_detector",
+        "minecraft:brewing_stand",
+        "minecraft:big_dripleaf",
+        "minecraft:small_amethyst_bud",
+        "minecraft:medium_amethyst_bud",
+        "minecraft:large_amethyst_bud",
+        "minecraft:lily_pad",
+        "minecraft:lectern",
+        "minecraft:hopper"
+    ]
+}

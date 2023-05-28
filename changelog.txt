@@ -1,6 +1,3 @@
-- Now works with Minecraft 1.17+
-- Reworked mechanics
-- Added the ability to crawl into spaces with blocks that cannot be crawled through completely
-- Removed the ability to crawl under lava
-- Added support for new blocks from 1.16+
-- Fixed some bugs
+- You can now crawl inside spaces in singular blocks
+- Going down a full-block staircase and hitting your head no longer crawls you
+- More bugfixes
