@@ -1,7 +1,6 @@
 # Called by crawly:check/load
 # Checks for block state exceptions for blocks with roofs
 
-function crawly:get_direction
 scoreboard players set #temp crawly 1
 
 execute if block ~ ~-.7 ~ #minecraft:trapdoors[open=true] run scoreboard players set #temp crawly 0
