@@ -1,6 +1,2 @@
-- Multiplayer interaction fixes
-- Fixed compatibility with 23w32a+
-- You can now crawl underneath a block while having your head inside it
-- Going down a full-block staircase and hitting your head no longer crawls you
+- Bug fixes, including multiplayer improvements
 - Performance improvements
-- More bugfixes

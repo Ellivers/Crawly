@@ -18,6 +18,7 @@ execute if block ~ ~ ~ minecraft:grindstone if block ~ ~-.7 ~ minecraft:grindsto
 execute if block ~ ~ ~ minecraft:grindstone if block ~ ~-.7 ~ minecraft:grindstone if score #direction crawly matches 3 if block ~ ~-.7 ~ minecraft:grindstone[face=wall,facing=east] run scoreboard players set #temp crawly 0
 execute if block ~ ~ ~ minecraft:grindstone if block ~ ~-.7 ~ minecraft:grindstone if score #direction crawly matches 4 if block ~ ~-.7 ~ minecraft:grindstone[face=wall,facing=west] run scoreboard players set #temp crawly 0
 execute if block ~ ~ ~ minecraft:pointed_dripstone if block ~ ~-.7 ~ minecraft:pointed_dripstone[vertical_direction=up] run scoreboard players set #temp crawly 0
+execute if block ~ ~-.7 ~ #minecraft:doors if block ~ ~ ~ #minecraft:doors[half=upper] run scoreboard players set #temp crawly 0
 execute if block ~ ~ ~ #minecraft:fence_gates[open=true] run scoreboard players set #temp crawly 0
 execute if block ~ ~ ~ #minecraft:fence_gates[facing=north] unless block ~ ~-.7 ~ #minecraft:fence_gates[open=true] unless block ~ ~-.7 ~ #minecraft:fence_gates[facing=east] unless block ~ ~-.7 ~ #minecraft:fence_gates[facing=west] run scoreboard players set #temp crawly 0
 execute if block ~ ~ ~ #minecraft:fence_gates[facing=south] unless block ~ ~-.7 ~ #minecraft:fence_gates[open=true] unless block ~ ~-.7 ~ #minecraft:fence_gates[facing=east] unless block ~ ~-.7 ~ #minecraft:fence_gates[facing=west] run scoreboard players set #temp crawly 0
@@ -31,6 +32,19 @@ execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #minecraft:trapdo
 execute if score #direction crawly matches 2 if block ~ ~-.7 ~ #minecraft:trapdoors[facing=south,open=true] run scoreboard players set #temp crawly 0
 execute if score #direction crawly matches 3 if block ~ ~-.7 ~ #minecraft:trapdoors[facing=east,open=true] run scoreboard players set #temp crawly 0
 execute if score #direction crawly matches 4 if block ~ ~-.7 ~ #minecraft:trapdoors[facing=west,open=true] run scoreboard players set #temp crawly 0
+
+execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #minecraft:doors[facing=north,open=false] run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #minecraft:doors[facing=east,hinge=right,open=true] run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #minecraft:doors[facing=west,hinge=left,open=true] run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 2 if block ~ ~-.7 ~ #minecraft:doors[facing=south,open=false] run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 2 if block ~ ~-.7 ~ #minecraft:doors[facing=east,hinge=left,open=true] run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 2 if block ~ ~-.7 ~ #minecraft:doors[facing=west,hinge=right,open=true] run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 3 if block ~ ~-.7 ~ #minecraft:doors[facing=east,open=false] run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 3 if block ~ ~-.7 ~ #minecraft:doors[facing=south,hinge=right,open=true] run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 3 if block ~ ~-.7 ~ #minecraft:doors[facing=north,hinge=left,open=true] run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 4 if block ~ ~-.7 ~ #minecraft:doors[facing=west,open=false] run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 4 if block ~ ~-.7 ~ #minecraft:doors[facing=north,hinge=right,open=true] run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 4 if block ~ ~-.7 ~ #minecraft:doors[facing=south,hinge=left,open=true] run scoreboard players set #temp crawly 0
 
 function #crawly:check_states
 

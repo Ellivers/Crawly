@@ -3,6 +3,10 @@
         "#minecraft:anvil",
         "#minecraft:trapdoors",
         "minecraft:hopper",
-        "minecraft:big_dripleaf"
+        "minecraft:big_dripleaf",
+        {
+            "id": "#minecraft:wall_hanging_signs",
+            "required": false
+        }
     ]
 }

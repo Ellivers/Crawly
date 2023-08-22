@@ -1,4 +1,4 @@
-# Called by crawly:check/states
+# Called by crawly:check/states/main
 
 execute if block ~ ~ ~ minecraft:cake[bites=0] run scoreboard players set #temp2 crawly 7
 execute if block ~ ~ ~ minecraft:cake[bites=1] run scoreboard players set #temp2 crawly 6
