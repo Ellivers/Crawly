@@ -1,2 +1,3 @@
-- Bug fixes, including multiplayer improvements
+- Fixed entities not being removed when the associated player leaves the game
+- Fixed some other bugs
 - Performance improvements
