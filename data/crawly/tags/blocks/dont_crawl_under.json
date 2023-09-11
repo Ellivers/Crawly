@@ -70,10 +70,7 @@
         "minecraft:jungle_sapling",
         "minecraft:acacia_sapling",
         "minecraft:dark_oak_sapling",
-        {
-            "id": "minecraft:mangrove_propagule",
-            "required": false
-        },
+        "minecraft:mangrove_propagule",
         {
             "id": "minecraft:cherry_sapling",
             "required": false
@@ -89,20 +86,14 @@
         "minecraft:small_amethyst_bud",
         "minecraft:medium_amethyst_bud",
         "minecraft:large_amethyst_bud",
-        {
-            "id": "minecraft:frogspawn",
-            "required": false
-        },
+        "minecraft:frogspawn",
         
         "minecraft:glow_lichen",
         "minecraft:spore_blossom",
         "minecraft:sweet_berry_bush",
         "minecraft:light",
         "minecraft:powder_snow",
-        {
-            "id": "minecraft:sculk_vein",
-            "required": false
-        },
+        "minecraft:sculk_vein",
         "minecraft:crimson_roots",
         "minecraft:warped_roots",
         "minecraft:crimson_fungus",

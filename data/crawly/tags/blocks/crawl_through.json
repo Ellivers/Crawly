@@ -92,10 +92,7 @@
             "id": "minecraft:pink_petals",
             "required": false
         },
-        {
-            "id": "minecraft:frogspawn",
-            "required": false
-        },
+        "minecraft:frogspawn",
         "minecraft:lily_pad",
         "minecraft:kelp",
         "minecraft:kelp_plant",
@@ -107,10 +104,7 @@
         "minecraft:nether_sprouts",
         "minecraft:moss_carpet",
         "minecraft:soul_torch",
-        {
-            "id": "minecraft:sculk_vein",
-            "required": false
-        },
+        "minecraft:sculk_vein",
         "minecraft:lava",
         "minecraft:nether_portal",
         "minecraft:end_portal",
@@ -124,10 +118,7 @@
         "minecraft:jungle_sapling",
         "minecraft:acacia_sapling",
         "minecraft:dark_oak_sapling",
-        {
-            "id": "minecraft:mangrove_propagule",
-            "required": false
-        },
+        "minecraft:mangrove_propagule",
         {
             "id": "minecraft:cherry_sapling",
             "required": false

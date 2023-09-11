@@ -1,3 +1,2 @@
-- Fixed entities not being removed when the associated player leaves the game
-- Fixed some other bugs
-- Performance improvements
+- Fixed unintentional crawling when standing in soul sand or mud without sneaking
+- Crawling underneath the same block you're inside now works while standing still
