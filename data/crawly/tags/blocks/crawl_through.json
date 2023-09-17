@@ -30,6 +30,7 @@
         "#minecraft:fence_gates",
         "#minecraft:pressure_plates",
         "#minecraft:fire",
+        "#crawly:groups/rods",
         "minecraft:lever",
         "minecraft:torch",
         "minecraft:wall_torch",
@@ -142,8 +143,6 @@
         "#minecraft:anvil",
         "minecraft:cake",
         "minecraft:pointed_dripstone",
-        "minecraft:chain",
-        "minecraft:end_rod",
         "minecraft:grindstone",
         "minecraft:lantern",
         "minecraft:soul_lantern",
@@ -156,7 +155,6 @@
         "minecraft:bell",
         "minecraft:conduit",
         "minecraft:brewing_stand",
-        "minecraft:lightning_rod",
         {
             "id": "minecraft:decorated_pot",
             "required": false

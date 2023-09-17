@@ -32,6 +32,12 @@ execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #minecraft:trapdo
 execute if score #direction crawly matches 2 if block ~ ~-.7 ~ #minecraft:trapdoors[facing=south,open=true] run scoreboard players set #temp crawly 0
 execute if score #direction crawly matches 3 if block ~ ~-.7 ~ #minecraft:trapdoors[facing=east,open=true] run scoreboard players set #temp crawly 0
 execute if score #direction crawly matches 4 if block ~ ~-.7 ~ #minecraft:trapdoors[facing=west,open=true] run scoreboard players set #temp crawly 0
+execute if block ~ ~ ~ #minecraft:trapdoors[facing=north,open=true] if block ~ ~-.7 ~ #minecraft:trapdoors[facing=north,open=true] run scoreboard players set #temp crawly 0
+execute if block ~ ~ ~ #minecraft:trapdoors[facing=south,open=true] if block ~ ~-.7 ~ #minecraft:trapdoors[facing=south,open=true] run scoreboard players set #temp crawly 0
+execute if block ~ ~ ~ #minecraft:trapdoors[facing=east,open=true] if block ~ ~-.7 ~ #minecraft:trapdoors[facing=east,open=true] run scoreboard players set #temp crawly 0
+execute if block ~ ~ ~ #minecraft:trapdoors[facing=west,open=true] if block ~ ~-.7 ~ #minecraft:trapdoors[facing=west,open=true] run scoreboard players set #temp crawly 0
+execute if block ~ ~ ~ #minecraft:trapdoors[half=top,open=false] run scoreboard players set #temp crawly 0
+execute if block ~ ~ ~ minecraft:bell if block ~ ~-.7 ~ minecraft:bell run scoreboard players set #temp crawly 0
 
 execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #minecraft:doors[facing=north,open=false] run scoreboard players set #temp crawly 0
 execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #minecraft:doors[facing=east,hinge=right,open=true] run scoreboard players set #temp crawly 0
@@ -47,5 +53,14 @@ execute if score #direction crawly matches 4 if block ~ ~-.7 ~ #minecraft:doors[
 execute if score #direction crawly matches 4 if block ~ ~-.7 ~ #minecraft:doors[facing=south,hinge=left,open=true] run scoreboard players set #temp crawly 0
 
 function #crawly:check_states
+
+execute if score #direction crawly matches 1..2 unless block ~.3 ~-.7 ~ #crawly:crawl_through run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 1..2 unless block ~-.3 ~-.7 ~ #crawly:crawl_through run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 3..4 unless block ~ ~-.7 ~.3 #crawly:crawl_through run scoreboard players set #temp crawly 0
+execute if score #direction crawly matches 3..4 unless block ~ ~-.7 ~-.3 #crawly:crawl_through run scoreboard players set #temp crawly 0
+
+scoreboard players set #temp2 crawly 0
+execute if block ~ ~ ~ #crawly:crawl_same if block ~ ~-.7 ~ #crawly:crawl_same run scoreboard players set #temp2 crawly 1
+execute if score #temp2 crawly matches 0 if blocks ~ ~-.4 ~ ~ ~-.4 ~ ~ ~ ~ all run scoreboard players set #temp crawly 0
 
 execute if score #temp crawly matches 1 run function crawly:check/motion

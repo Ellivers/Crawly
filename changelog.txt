@@ -1,2 +1,4 @@
-- Fixed unintentional crawling when standing in soul sand or mud without sneaking
+- Fixed unintentional crawling when standing in soul sand, mud, path blocks, etc. without sneaking
 - Crawling underneath the same block you're inside now works while standing still
+- Compatibility fixes
+- Some more fixes

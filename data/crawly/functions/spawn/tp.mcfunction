@@ -2,8 +2,8 @@
 # Teleports the entity to where it should be
 
 scoreboard players set #align crawly 0
-execute if block ^.3 ^ ^ #crawly:dont_crawl_under unless block ~ ~ ~ #crawly:dont_crawl_under run scoreboard players set #align crawly 1
-execute if block ^-.3 ^ ^ #crawly:dont_crawl_under unless block ~ ~ ~ #crawly:dont_crawl_under run scoreboard players set #align crawly 2
+execute if block ^.3 ^ ^ #crawly:dont_crawl_under unless block ^-.3 ^ ^ #crawly:dont_crawl_under run scoreboard players set #align crawly 1
+execute if block ^-.3 ^ ^ #crawly:dont_crawl_under unless block ^.3 ^ ^ #crawly:dont_crawl_under run scoreboard players set #align crawly 2
 
 execute if score #align crawly matches 0 align y run tp ^ ^-.35 ^.3
 execute if score #align crawly matches 1 align y run tp ^-.3 ^-.35 ^.3
