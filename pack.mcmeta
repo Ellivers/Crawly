@@ -1,10 +1,10 @@
 {
   "pack": {
-    "pack_format": 12,
+    "pack_format": 15,
     "description": "Crawl into any hole!",
 
     "supported_formats": {
-      "min_inclusive": 12,
+      "min_inclusive": 15,
       "max_inclusive": 18
     }
   },

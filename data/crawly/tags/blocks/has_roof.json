@@ -4,9 +4,6 @@
         "#minecraft:trapdoors",
         "minecraft:hopper",
         "minecraft:big_dripleaf",
-        {
-            "id": "#minecraft:wall_hanging_signs",
-            "required": false
-        }
+        "#minecraft:wall_hanging_signs"
     ]
 }

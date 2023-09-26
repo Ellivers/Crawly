@@ -89,10 +89,7 @@
         "minecraft:small_amethyst_bud",
         "minecraft:medium_amethyst_bud",
         "minecraft:large_amethyst_bud",
-        {
-            "id": "minecraft:pink_petals",
-            "required": false
-        },
+        "minecraft:pink_petals",
         "minecraft:frogspawn",
         "minecraft:lily_pad",
         "minecraft:kelp",
@@ -120,10 +117,7 @@
         "minecraft:acacia_sapling",
         "minecraft:dark_oak_sapling",
         "minecraft:mangrove_propagule",
-        {
-            "id": "minecraft:cherry_sapling",
-            "required": false
-        },
+        "minecraft:cherry_sapling",
         "minecraft:attached_melon_stem",
         "minecraft:attached_pumpkin_stem",
         "minecraft:tall_grass",
@@ -147,18 +141,12 @@
         "minecraft:lantern",
         "minecraft:soul_lantern",
         "minecraft:bamboo",
-        {
-            "id": "minecraft:sniffer_egg",
-            "required": false
-        },
+        "minecraft:sniffer_egg",
         "minecraft:chorus_plant",
         "minecraft:bell",
         "minecraft:conduit",
         "minecraft:brewing_stand",
-        {
-            "id": "minecraft:decorated_pot",
-            "required": false
-        },
+        "minecraft:decorated_pot",
         "minecraft:dragon_head",
         "minecraft:dragon_wall_head",
         "minecraft:player_head",
@@ -171,14 +159,8 @@
         "minecraft:wither_skeleton_wall_skull",
         "minecraft:zombie_head",
         "minecraft:zombie_wall_head",
-        {
-            "id": "minecraft:piglin_head",
-            "required": false
-        },
-        {
-            "id": "minecraft:piglin_wall_head",
-            "required": false
-        },
+        "minecraft:piglin_head",
+        "minecraft:piglin_wall_head",
         "minecraft:dragon_egg",
         "minecraft:chest",
         "minecraft:trapped_chest",
