@@ -31,6 +31,7 @@
         "#minecraft:pressure_plates",
         "#minecraft:fire",
         "#crawly:groups/rods",
+        "minecraft:chain",
         "minecraft:lever",
         "minecraft:torch",
         "minecraft:wall_torch",
@@ -123,6 +124,7 @@
         "minecraft:tall_grass",
         "minecraft:large_fern",
         "minecraft:tall_seagrass",
+        "minecraft:moving_piston",
 
 
 
