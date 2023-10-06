@@ -48,6 +48,10 @@ execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #crawly:groups
 execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #crawly:groups/rods[facing=west] run return 0
 execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ minecraft:chain[axis=z] run return 0
 execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ minecraft:chain[axis=x] run return 0
+execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #crawly:groups/wall_heads[facing=north] run return 0
+execute if score #direction crawly matches 2 if block ~ ~-.7 ~ #crawly:groups/wall_heads[facing=south] run return 0
+execute if score #direction crawly matches 3 if block ~ ~-.7 ~ #crawly:groups/wall_heads[facing=east] run return 0
+execute if score #direction crawly matches 4 if block ~ ~-.7 ~ #crawly:groups/wall_heads[facing=west] run return 0
 
 execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #minecraft:doors[facing=north,open=false] run return 0
 execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #minecraft:doors[facing=east,hinge=right,open=true] run return 0
