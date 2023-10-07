@@ -37,6 +37,8 @@
         "minecraft:wall_torch",
         "minecraft:redstone_torch",
         "minecraft:redstone_wall_torch",
+        "minecraft:soul_torch",
+        "minecraft:soul_wall_torch",
         "minecraft:snow",
         "minecraft:cobweb",
         "minecraft:sea_pickle",
@@ -102,7 +104,6 @@
         "minecraft:nether_wart",
         "minecraft:nether_sprouts",
         "minecraft:moss_carpet",
-        "minecraft:soul_torch",
         "minecraft:sculk_vein",
         "minecraft:lava",
         "minecraft:nether_portal",
@@ -184,7 +185,8 @@
         "minecraft:black_stained_glass_pane",
         "minecraft:hopper",
         "minecraft:cactus",
-        "minecraft:turtle_egg"
+        "minecraft:turtle_egg",
+        "minecraft:honey_block"
 
     ]
 }
