@@ -1,4 +1,4 @@
-# Called by itself and by crawly:entity/check
+# Called by crawly:entity/remove
 # Removes a Crawly entity
 
 execute on passengers run kill

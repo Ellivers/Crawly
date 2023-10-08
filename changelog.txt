@@ -2,6 +2,6 @@
 - Block and entity interactions are now disabled during the initial crawl animation
 - Fixed unintentional crawling when standing in soul sand, mud, path blocks, etc. without sneaking
 - Crawling underneath the same block you're inside now works while standing still
+- A bunch of case-specific fixes
 - Compatibility fixes
 - Performance improvements
-- Some more fixes

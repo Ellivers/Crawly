@@ -1,4 +1,4 @@
-# Called by crawly:check/load
+# Called by crawly:main
 # Commands to run tickly for nearby Crawly entities
 
 scoreboard players set #temp crawly 0

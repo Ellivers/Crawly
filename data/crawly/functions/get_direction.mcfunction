@@ -1,4 +1,4 @@
-# Called by crawly:check/states/main
+# Called by crawly:check/states/main and crawly:check/states/roof
 # Gets the direction the player is facing
 
 # north = 1, south = 2, east = 3, west = 4
