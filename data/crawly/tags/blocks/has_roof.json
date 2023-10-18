@@ -4,6 +4,7 @@
         "#minecraft:trapdoors",
         "minecraft:hopper",
         "minecraft:big_dripleaf",
-        "#minecraft:wall_hanging_signs"
+        "#minecraft:wall_hanging_signs",
+        "minecraft:piston_head"
     ]
 }

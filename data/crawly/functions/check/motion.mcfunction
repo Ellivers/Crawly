@@ -19,4 +19,4 @@ execute if score #direction crawly matches 4 if block ~ ~-1.5 ~ #minecraft:walls
 
 scoreboard players set #temp crawly 2
 execute store result score #temp2 crawly run data get entity @s Motion[1] 100
-execute if score #temp2 crawly matches -10.. run function crawly:spawn/spawn
+execute if score #temp2 crawly matches -10.. unless score #temp2 crawly matches 0 run function crawly:spawn/spawn

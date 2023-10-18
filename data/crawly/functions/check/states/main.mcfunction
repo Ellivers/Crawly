@@ -57,6 +57,10 @@ execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #crawly:groups/wa
 execute if score #direction crawly matches 2 if block ~ ~-.7 ~ #crawly:groups/wall_heads[facing=south] run return 0
 execute if score #direction crawly matches 3 if block ~ ~-.7 ~ #crawly:groups/wall_heads[facing=east] run return 0
 execute if score #direction crawly matches 4 if block ~ ~-.7 ~ #crawly:groups/wall_heads[facing=west] run return 0
+execute if score #direction crawly matches 1 if block ~ ~-.7 ~ minecraft:piston_head[facing=south] run return 0
+execute if score #direction crawly matches 2 if block ~ ~-.7 ~ minecraft:piston_head[facing=north] run return 0
+execute if score #direction crawly matches 3 if block ~ ~-.7 ~ minecraft:piston_head[facing=west] run return 0
+execute if score #direction crawly matches 4 if block ~ ~-.7 ~ minecraft:piston_head[facing=east] run return 0
 execute if block ~ ~-.7 ~ minecraft:snow unless block ~ ~-.7 ~ minecraft:snow[layers=1] unless block ~ ~-.7 ~ minecraft:snow[layers=2] unless block ~ ~-.7 ~ minecraft:snow[layers=3] unless block ~ ~-.7 ~ minecraft:snow[layers=4] run return 0
 execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=down] run return 0
 
