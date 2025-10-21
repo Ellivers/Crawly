@@ -1,4 +1,4 @@
-# Called by crawly:player
+# Called by crawly:check/motion
 # Spawns the entities needed to make the player crawl
 
 function crawly:spawn/common
