@@ -1,13 +1,6 @@
 {
     "values": [
-        {
-            "id": "#minecraft:wool_carpets",
-            "required": false
-        },
-        {
-            "id": "#minecraft:carpets",
-            "required": false
-        },
+        "#minecraft:wool_carpets",
         "#minecraft:trapdoors",
         "#minecraft:candles",
         "#minecraft:flower_pots",
