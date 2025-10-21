@@ -1,7 +1,4 @@
-- Now only works with 1.20+
-- Block and entity interactions are now disabled during the initial crawl animation
-- Fixed unintentional crawling when standing in soul sand, mud, path blocks, etc. without sneaking
-- Crawling underneath the same block you're inside now works while standing still
-- A bunch of case-specific fixes
-- Compatibility fixes
-- Performance improvements
+- Added support for 1.21.9+
+- Added new blocks from 1.21+
+- You can now crawl between chains
+- Fixes
