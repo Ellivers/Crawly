@@ -4,6 +4,7 @@
         "#minecraft:trapdoors",
         "#minecraft:candles",
         "#minecraft:flower_pots",
+        "#minecraft:chains",
         "minecraft:sea_pickle",
         "minecraft:repeater",
         "minecraft:comparator",
@@ -15,6 +16,9 @@
         "minecraft:large_amethyst_bud",
         "minecraft:lily_pad",
         "minecraft:lectern",
-        "minecraft:hopper"
+        "minecraft:hopper",
+        "minecraft:moss_carpet",
+
+        "minecraft:pale_moss_carpet"
     ]
 }

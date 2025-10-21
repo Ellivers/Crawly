@@ -17,6 +17,15 @@
         "minecraft:purple_stained_glass_pane",
         "minecraft:red_stained_glass_pane",
         "minecraft:white_stained_glass_pane",
-        "minecraft:yellow_stained_glass_pane"
+        "minecraft:yellow_stained_glass_pane",
+
+        "minecraft:copper_bars",
+        "minecraft:exposed_copper_bars",
+        "minecraft:weathered_copper_bars",
+        "minecraft:oxidized_copper_bars",
+        "minecraft:waxed_copper_bars",
+        "minecraft:waxed_exposed_copper_bars",
+        "minecraft:waxed_weathered_copper_bars",
+        "minecraft:waxed_oxidized_copper_bars"
     ]
 }
