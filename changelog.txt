@@ -1,4 +1,4 @@
 - Now only supports 1.21+
 - Added new blocks from 1.21+
-- You can now crawl between chains
+- You can now crawl between chains, end rods, lightning rods, and piston heads
 - Fixes

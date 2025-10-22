@@ -12,6 +12,7 @@ execute if block ~ ~ ~ minecraft:trapped_chest if block ~ ~-.7 ~ minecraft:trapp
 execute if block ~ ~ ~ minecraft:ender_chest if block ~ ~-.7 ~ minecraft:ender_chest run return 0
 execute if block ~ ~ ~ #minecraft:fences if block ~ ~-.7 ~ #minecraft:fences run return 0
 execute if block ~ ~ ~ #minecraft:walls if block ~ ~-.7 ~ #minecraft:walls run return 0
+execute if block ~ ~ ~ minecraft:decorated_pot if block ~ ~-.7 ~ minecraft:decorated_pot run return 0
 
 execute if block ~ ~ ~ minecraft:cake if block ~ ~-.7 ~ minecraft:cake run function crawly:check/special/cake
 execute if block ~ ~ ~ minecraft:grindstone if block ~ ~-.7 ~ minecraft:grindstone if score #direction crawly matches 1 unless block ~ ~ ~ minecraft:grindstone[face=wall,facing=south] run return 0
@@ -46,10 +47,14 @@ execute if block ~ ~ ~ #minecraft:trapdoors[facing=south,open=true] if block ~ ~
 execute if block ~ ~ ~ #minecraft:trapdoors[facing=east,open=true] if block ~ ~-.7 ~ #minecraft:trapdoors[facing=east,open=true] run return 0
 execute if block ~ ~ ~ #minecraft:trapdoors[facing=west,open=true] if block ~ ~-.7 ~ #minecraft:trapdoors[facing=west,open=true] run return 0
 execute if block ~ ~ ~ #minecraft:trapdoors[half=top,open=false] run return 0
-execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #crawly:groups/rods[facing=north] run return 0
-execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #crawly:groups/rods[facing=south] run return 0
-execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #crawly:groups/rods[facing=east] run return 0
-execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #crawly:groups/rods[facing=west] run return 0
+execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #crawly:groups/rods[facing=up] if block ~ ~ ~ #crawly:groups/rods unless block ~ ~ ~ #crawly:groups/rods[facing=north] unless block ~ ~ ~ #crawly:groups/rods[facing=south] run return 0
+execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #crawly:groups/rods[facing=down] if block ~ ~ ~ #crawly:groups/rods unless block ~ ~ ~ #crawly:groups/rods[facing=north] unless block ~ ~ ~ #crawly:groups/rods[facing=south] run return 0
+execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #crawly:groups/rods[facing=up] if block ~ ~ ~ #crawly:groups/rods unless block ~ ~ ~ #crawly:groups/rods[facing=east] unless block ~ ~ ~ #crawly:groups/rods[facing=west] run return 0
+execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #crawly:groups/rods[facing=down] if block ~ ~ ~ #crawly:groups/rods unless block ~ ~ ~ #crawly:groups/rods[facing=east] unless block ~ ~ ~ #crawly:groups/rods[facing=west] run return 0
+execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #crawly:groups/rods[facing=north] unless block ~ ~ ~ #crawly:groups/rods[facing=north] unless block ~ ~ ~ #crawly:groups/rods[facing=south] run return 0
+execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #crawly:groups/rods[facing=south] unless block ~ ~ ~ #crawly:groups/rods[facing=north] unless block ~ ~ ~ #crawly:groups/rods[facing=south] run return 0
+execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #crawly:groups/rods[facing=east] unless block ~ ~ ~ #crawly:groups/rods[facing=east] unless block ~ ~ ~ #crawly:groups/rods[facing=west] run return 0
+execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #crawly:groups/rods[facing=west] unless block ~ ~ ~ #crawly:groups/rods[facing=east] unless block ~ ~ ~ #crawly:groups/rods[facing=west] run return 0
 execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #crawly:groups/chains[axis=y] if block ~ ~ ~ #crawly:groups/chains unless block ~ ~ ~ #crawly:groups/chains[axis=z] run return 0
 execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #crawly:groups/chains[axis=y] if block ~ ~ ~ #crawly:groups/chains unless block ~ ~ ~ #crawly:groups/chains[axis=x] run return 0
 execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #crawly:groups/chains[axis=z] unless block ~ ~ ~ #crawly:groups/chains[axis=z] run return 0

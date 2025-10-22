@@ -4,7 +4,7 @@
         "#minecraft:trapdoors",
         "#minecraft:candles",
         "#minecraft:flower_pots",
-        "#crawly:groups/chains",
+        "#crawly:crawl_same_higher",
         "minecraft:sea_pickle",
         "minecraft:repeater",
         "minecraft:comparator",
