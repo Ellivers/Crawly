@@ -5,15 +5,13 @@ function crawly:get_direction
 scoreboard players set #temp crawly 1
 
 execute if block ~ ~ ~ #crawly:groups/pane_likes if block ~ ~-.7 ~ #crawly:groups/pane_likes run return 0
-execute if block ~ ~ ~ #minecraft:lanterns if block ~ ~-.7 ~ #minecraft:lanterns run return 0
+execute if block ~ ~ ~ #crawly:groups/lanterns if block ~ ~-.7 ~ #crawly:groups/lanterns run return 0
 execute if block ~ ~ ~ minecraft:bell if block ~ ~-.7 ~ minecraft:bell run return 0
 execute if block ~ ~ ~ minecraft:chest if block ~ ~-.7 ~ minecraft:chest run return 0
 execute if block ~ ~ ~ minecraft:trapped_chest if block ~ ~-.7 ~ minecraft:trapped_chest run return 0
 execute if block ~ ~ ~ minecraft:ender_chest if block ~ ~-.7 ~ minecraft:ender_chest run return 0
-execute if block ~ ~ ~ #minecraft:copper_chests if block ~ ~-.7 ~ #minecraft:copper_chests run return 0
 execute if block ~ ~ ~ #minecraft:fences if block ~ ~-.7 ~ #minecraft:fences run return 0
 execute if block ~ ~ ~ #minecraft:walls if block ~ ~-.7 ~ #minecraft:walls run return 0
-execute if block ~ ~ ~ minecraft:dried_ghast if block ~ ~-.7 ~ minecraft:dried_ghast run return 0
 
 execute if block ~ ~ ~ minecraft:cake if block ~ ~-.7 ~ minecraft:cake run function crawly:check/special/cake
 execute if block ~ ~ ~ minecraft:grindstone if block ~ ~-.7 ~ minecraft:grindstone if score #direction crawly matches 1 unless block ~ ~ ~ minecraft:grindstone[face=wall,facing=south] run return 0
@@ -52,10 +50,10 @@ execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #crawly:groups
 execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #crawly:groups/rods[facing=south] run return 0
 execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #crawly:groups/rods[facing=east] run return 0
 execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #crawly:groups/rods[facing=west] run return 0
-execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #minecraft:chains[axis=y] if block ~ ~ ~ #minecraft:chains unless block ~ ~ ~ #minecraft:chains[axis=z] run return 0
-execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #minecraft:chains[axis=y] if block ~ ~ ~ #minecraft:chains unless block ~ ~ ~ #minecraft:chains[axis=x] run return 0
-execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #minecraft:chains[axis=z] unless block ~ ~ ~ #minecraft:chains[axis=z] run return 0
-execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #minecraft:chains[axis=x] unless block ~ ~ ~ #minecraft:chains[axis=x] run return 0
+execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #crawly:groups/chains[axis=y] if block ~ ~ ~ #crawly:groups/chains unless block ~ ~ ~ #crawly:groups/chains[axis=z] run return 0
+execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #crawly:groups/chains[axis=y] if block ~ ~ ~ #crawly:groups/chains unless block ~ ~ ~ #crawly:groups/chains[axis=x] run return 0
+execute if score #direction crawly matches 1..2 if block ~ ~-.7 ~ #crawly:groups/chains[axis=z] unless block ~ ~ ~ #crawly:groups/chains[axis=z] run return 0
+execute if score #direction crawly matches 3..4 if block ~ ~-.7 ~ #crawly:groups/chains[axis=x] unless block ~ ~ ~ #crawly:groups/chains[axis=x] run return 0
 execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #crawly:groups/wall_heads[facing=north] run return 0
 execute if score #direction crawly matches 2 if block ~ ~-.7 ~ #crawly:groups/wall_heads[facing=south] run return 0
 execute if score #direction crawly matches 3 if block ~ ~-.7 ~ #crawly:groups/wall_heads[facing=east] run return 0
@@ -66,10 +64,6 @@ execute if score #direction crawly matches 3 if block ~ ~-.7 ~ minecraft:piston_
 execute if score #direction crawly matches 4 if block ~ ~-.7 ~ minecraft:piston_head[facing=east] run return 0
 execute if block ~ ~-.7 ~ minecraft:snow unless block ~ ~-.7 ~ minecraft:snow[layers=1] unless block ~ ~-.7 ~ minecraft:snow[layers=2] unless block ~ ~-.7 ~ minecraft:snow[layers=3] unless block ~ ~-.7 ~ minecraft:snow[layers=4] run return 0
 execute if block ~ ~ ~ minecraft:large_amethyst_bud[facing=down] run return 0
-execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #minecraft:wooden_shelves[facing=north] run return 0
-execute if score #direction crawly matches 2 if block ~ ~-.7 ~ #minecraft:wooden_shelves[facing=south] run return 0
-execute if score #direction crawly matches 3 if block ~ ~-.7 ~ #minecraft:wooden_shelves[facing=east] run return 0
-execute if score #direction crawly matches 4 if block ~ ~-.7 ~ #minecraft:wooden_shelves[facing=west] run return 0
 
 execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #minecraft:doors[facing=north,open=false] run return 0
 execute if score #direction crawly matches 1 if block ~ ~-.7 ~ #minecraft:doors[facing=east,hinge=right,open=true] run return 0

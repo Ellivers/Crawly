@@ -1,6 +1,10 @@
 {
     "values": [
-        "#minecraft:lightning_rods",
+        {
+            "id": "#minecraft:lightning_rods",
+            "required": false
+        },
+        "minecraft:lightning_rod",
         "minecraft:end_rod"
     ]
 }

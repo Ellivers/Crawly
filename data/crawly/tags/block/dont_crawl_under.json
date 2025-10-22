@@ -21,8 +21,6 @@
         "minecraft:redstone_wall_torch",
         "minecraft:soul_torch",
         "minecraft:soul_wall_torch",
-        "minecraft:copper_torch",
-        "minecraft:copper_wall_torch",
         "minecraft:snow",
         "minecraft:cobweb",
         "minecraft:sea_pickle",
@@ -96,14 +94,49 @@
         "minecraft:attached_melon_stem",
         "minecraft:attached_pumpkin_stem",
 
-        "minecraft:pale_hanging_moss",
-        "minecraft:resin_clump",
-        "minecraft:leaf_litter",
-        "minecraft:wildflowers",
-        "minecraft:bush",
-        "minecraft:firefly_bush",
-        "minecraft:cactus_flower",
-        "minecraft:short_dry_grass",
-        "minecraft:tall_dry_grass"
+        {
+            "id": "minecraft:copper_torch",
+            "required": false
+        },
+        {
+            "id": "minecraft:copper_wall_torch",
+            "required": false
+        },
+        {
+            "id": "minecraft:pale_hanging_moss",
+            "required": false
+        },
+        {
+            "id": "minecraft:resin_clump",
+            "required": false
+        },
+        {
+            "id": "minecraft:leaf_litter",
+            "required": false
+        },
+        {
+            "id": "minecraft:wildflowers",
+            "required": false
+        },
+        {
+            "id": "minecraft:bush",
+            "required": false
+        },
+        {
+            "id": "minecraft:firefly_bush",
+            "required": false
+        },
+        {
+            "id": "minecraft:cactus_flower",
+            "required": false
+        },
+        {
+            "id": "minecraft:short_dry_grass",
+            "required": false
+        },
+        {
+            "id": "minecraft:tall_dry_grass",
+            "required": false
+        }
     ]
 }

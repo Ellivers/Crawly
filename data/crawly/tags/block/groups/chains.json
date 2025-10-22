@@ -2,11 +2,11 @@
     "replace": false,
     "values": [
         {
-            "id": "crawly:v80_state_extras",
+            "id": "#minecraft:chains",
             "required": false
         },
         {
-            "id": "crawly:v88_state_extras",
+            "id": "minecraft:chain",
             "required": false
         }
     ]

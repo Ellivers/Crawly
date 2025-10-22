@@ -1,4 +1,4 @@
-- Added support for 1.21.9+
+- Now only supports 1.21+
 - Added new blocks from 1.21+
 - You can now crawl between chains
 - Fixes

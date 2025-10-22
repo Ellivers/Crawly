@@ -5,10 +5,42 @@
 
     "supported_formats": {
       "min_inclusive": 48,
-      "max_inclusive": 88
+      "max_inclusive": 91
     },
 
     "min_format": 48,
-    "max_format": 88
+    "max_format": 91
+  },
+  
+  "overlays": {
+    "entries": [
+      {
+        "directory": "v57",
+        "formats": {
+          "min_inclusive": 57,
+          "max_inclusive": 9999
+        },
+        "min_format": 57,
+        "max_format": 9999
+      },
+      {
+        "directory": "v80",
+        "formats": {
+          "min_inclusive": 80,
+          "max_inclusive": 9999
+        },
+        "min_format": 80,
+        "max_format": 9999
+      },
+      {
+        "directory": "v88",
+        "formats": {
+          "min_inclusive": 88,
+          "max_inclusive": 9999
+        },
+        "min_format": 88,
+        "max_format": 9999
+      }
+    ]
   }
 }

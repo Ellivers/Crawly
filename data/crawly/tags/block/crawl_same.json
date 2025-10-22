@@ -4,7 +4,7 @@
         "#minecraft:trapdoors",
         "#minecraft:candles",
         "#minecraft:flower_pots",
-        "#minecraft:chains",
+        "#crawly:groups/chains",
         "minecraft:sea_pickle",
         "minecraft:repeater",
         "minecraft:comparator",
@@ -19,6 +19,9 @@
         "minecraft:hopper",
         "minecraft:moss_carpet",
 
-        "minecraft:pale_moss_carpet"
+        {
+            "id": "minecraft:pale_moss_carpet",
+            "required": false
+        }
     ]
 }
