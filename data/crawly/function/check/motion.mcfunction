@@ -1,4 +1,4 @@
-# Called by crawly:check/states/main and crawly:check/states/roof
+# Called by crawly:check/states/load and crawly:check/states/roof
 # Checks motion and some special cases
 
 # Check neighbouring blocks
@@ -8,6 +8,10 @@ execute if score #direction crawly matches 3..4 unless block ~ ~-.7 ~.3 #crawly:
 execute if score #direction crawly matches 3..4 unless block ~ ~-.7 ~-.3 #crawly:crawl_through run return 0
 
 # Check extended fence/wall collision
+execute if score #direction crawly matches 1..2 if block ~ ~-1.5 ~ #minecraft:fence_gates[facing=east,open=false] run return 0
+execute if score #direction crawly matches 1..2 if block ~ ~-1.5 ~ #minecraft:fence_gates[facing=west,open=false] run return 0
+execute if score #direction crawly matches 3..4 if block ~ ~-1.5 ~ #minecraft:fence_gates[facing=north,open=false] run return 0
+execute if score #direction crawly matches 3..4 if block ~ ~-1.5 ~ #minecraft:fence_gates[facing=south,open=false] run return 0
 execute if score #direction crawly matches 1 if block ~ ~-1.5 ~ #minecraft:fences[south=true] run return 0
 execute if score #direction crawly matches 2 if block ~ ~-1.5 ~ #minecraft:fences[north=true] run return 0
 execute if score #direction crawly matches 3 if block ~ ~-1.5 ~ #minecraft:fences[west=true] run return 0
