@@ -133,6 +133,11 @@
         {
             "id": "minecraft:tall_dry_grass",
             "required": false
+        },
+
+        {
+            "id": "minecraft:red_shrub",
+            "required": false
         }
     ]
 }

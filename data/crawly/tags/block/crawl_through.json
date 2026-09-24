@@ -62,6 +62,7 @@
             "id": "minecraft:dried_ghast",
             "required": false
         },
+        
         {
             "id": "minecraft:sulfur_spike",
             "required": false
