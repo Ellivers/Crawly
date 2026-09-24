@@ -8,6 +8,10 @@
         {
             "id": "crawly:v88_state_extras",
             "required": false
+        },
+        {
+            "id": "crawly:v107_state_extras",
+            "required": false
         }
     ]
 }
